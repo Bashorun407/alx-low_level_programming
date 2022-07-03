@@ -14,15 +14,18 @@ int main(void)
 
 	for (a = 0; a <= 9; a++)
 	{
+		putchar(a);
 		for (b = 0; b <= 9; b++)
 		{
+			putchar(b);
 			if (a != b)
 			{
 				putchar(a);
-				putchar(‘,’);
+				putchar(‘, ’);
 				putchar(b);
 			}
 		}
 	}
+
 	return (0);
 }
