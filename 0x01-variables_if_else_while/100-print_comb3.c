@@ -19,7 +19,7 @@ int main(void)
 			if (a != b)
 			{
 				putchar(a);
-				putchar(‘, ’);
+				putchar(‘,’);
 				putchar(b);
 			}
 		}
