@@ -1,4 +1,4 @@
-#include “main.h”
+#include "main.h"
 
 /**
  * main - check the code
@@ -7,14 +7,15 @@
  */
 int main(void)
 {
-	char alph = ‘a’;
+	int i = 0;
+	char alph[] = "abcdefghijklmnopqrstuvwxyz";
 
-	while (alph <= ‘z’)
+	while (i != '\0')
 	{
-		_putchar(alph);
-		_putchar(‘\n’);
-		alph++;
+		_putchar(alph[i]);
+		i++;
 	}
+	_putchar('\n');
 	print_alphabet();
 
 	return (0);
