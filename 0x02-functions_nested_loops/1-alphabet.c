@@ -12,6 +12,7 @@ int main(void)
 	while (alph <= ‘z’)
 	{
 		_putchar(alph);
+		_putchar(‘\n’);
 		alph++;
 	}
 	print_alphabet();
