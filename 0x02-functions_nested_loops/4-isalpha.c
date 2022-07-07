@@ -1,24 +1,16 @@
 #include "main.h"
-void check_alphabet(char c);
 /**
- * Program checks for alphabetic character
- * returns 1 if a letter is lower or uppercaser
- * returns 0 otherwise
- */
-int main(void)
+ ** _isalpha - function to check if c is a letter, lowercase or uppercase
+ ** @c: is the int that will use for the argument of the function
+ ** Return: 0
+ **/
+int _isalpha(int c)
 {
-	int r;
-	char x = 'H';
-	void check_alphabet(x)
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 	{
-		r = _isalpha(x);
-		if (r == 1)
-			_putchar(r + '0');
-		else if (r == 0)
-			_putchar(r + '0');
+		return (1);
 	}
-	_putchar('\n');
-
-	return (0);
+	else
+		return (0);
 }
 
