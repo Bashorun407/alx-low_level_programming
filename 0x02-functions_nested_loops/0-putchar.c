@@ -1,20 +1,21 @@
 #include "main.h"
 
 /**
- * _putchar function prints the characters “_putchar”
- */
+ ** main - function to print
+ **
+ ** Return: 0
+ **/
 int main(void)
 {
-	int x = 0;
-	char text[] = "_putchar";
-
-	while (text[x] != '\0')
-	{
-		_putchar(text[x]);
-		x++;
-	}
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
 	_putchar('\n');
-
 	return (0);
 }
 
