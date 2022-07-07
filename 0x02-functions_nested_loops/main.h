@@ -1,5 +1,3 @@
-#ifndef
-#define MAIN_H "main.h"
 /**
  * header file contains function prototypes of various functions
  * numbered accordingly
@@ -46,5 +44,4 @@ void print_times_table(int n);
 
 /* 13 prints natural numbers between two selected numbers*/
 
-#endif
 
