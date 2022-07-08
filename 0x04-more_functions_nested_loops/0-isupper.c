@@ -9,7 +9,6 @@ int _isupper(char c)
 {
 	char alpha[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	int i;
-	
 	for (i = 0; i < 26; i++)
 	{
 		if (c == alpha[i])
