@@ -4,3 +4,6 @@ int _putchar(char c);
 /* _isupper function checks if a character is uppercase.*/
 int _isupper(int c);
 
+/* _isdigit function checks if a character is a digit*/
+int _isdigit(int c);
+
