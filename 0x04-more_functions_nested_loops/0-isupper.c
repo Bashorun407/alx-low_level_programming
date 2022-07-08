@@ -4,20 +4,18 @@
  **
  ** Return: Always 0.
  **/
-int main(void)
-{
-	int _isupper(int c)
-	{
-		char alpha[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-		int i;
 
-		for (i = 0; i < 26; i++)
-		{
-			if (c == alpha[i])
-				return (1);
-			else
-				return (0);
-		}
+int _isupper(char c)
+{
+	char alpha[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	int i;
+	
+	for (i = 0; i < 26; i++)
+	{
+		if (c == alpha[i])
+			return (1);
+		else
+			return (0);
 	}
 }
 
