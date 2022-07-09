@@ -28,5 +28,8 @@ void print_diagonal(int n);
 /* 8 print_square prints a square followed by a new line*/
 void print_square(int size);
 
+/* print_triangle prints a triangle followed by a new line*/
+void print_triangle(int size);
+
 /* 12 101-print_number.c function prints an integer*/
 void print_number(int n);
