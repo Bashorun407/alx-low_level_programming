@@ -1,5 +1,6 @@
 #include <stdio.h>
-/*This program prints the numbers from 1 to 100
+/*
+ * This program prints the numbers from 1 to 100
  * for multiples of three prints fizz
  * for multiples of five prints Buzz
  * for multiples of 3 and 5 prints FizzBuzz
