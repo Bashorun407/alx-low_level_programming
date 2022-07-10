@@ -7,13 +7,13 @@
 
 int _isupper(char c)
 {
-	char alpha[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	int i;
-	for (i = 0; i < 26; i++)
+	if ((c >= 'A') && (c <= 'Z'))
 	{
-		if (c == alpha[i])
-			return (1);
+		return (1);
 	}
-	return (0);
+	else
+	{
+		return (0);
+	}
 }
 
