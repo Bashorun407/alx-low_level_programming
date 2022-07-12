@@ -5,26 +5,27 @@
  */
 void rev_string(char *s)
 {
-	int i, j, a, b, count;
+	int i, j, x, count;
 
-	a = 0;
 	count = 0;
 
-	/* getting the size of the value of *s */
+	/* getting the length of s[] array by incrementing count */
 	for (i = 0; s[i] != '\0'; i++)
-		count++;
-	/* declaring a character array of size count */
-	char arr[count];
-
-	/* copying the contents of *s into arr[] in reverse order */
-	for (j = count; count > 0; j--)
 	{
-		arr[a] = s[j - 1];
-		a++;
+		count++;
 	}
 
-	/* copying the character contents of arr[] to *s */
-	for (b = 0; b < count; b++)
-		s[b] = arr[b];
+	/* now making attempts to reverse the string*/
+	for (j = 0; s[j] != '\0'; j++)
+	{
+		/*place the first element of s[] into container x*/
+		x = s[j];
+		/*replace the current last element with first element of s[]*/
+		s[j] = s[count];
+		/* place the element in the container into the current last element */
+		s[count] = x;
+		/* decreasing count by 1 to reverse the next values */
+		count--;
+	}
 }
 
