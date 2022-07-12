@@ -10,9 +10,9 @@ char *_strcpy(char *dest, char *src)
 	static char arr[];
 
 	/* copies the string pointed to by src to arr[] array*/
-	for (i = 0; *src[i] != '\0'; i++)
+	for (i = 0; src[i] != '\0'; i++)
 	{
-		arr[i] = *src[i];
+		arr[i] = src[i];
 		count++;
 	}
 
@@ -20,7 +20,7 @@ char *_strcpy(char *dest, char *src)
 
 	/* copies the string in arr[] array to the buffer pointed to by *dest */
 	for (j = 0; j <= count; j++)
-		*dest[j] = arr[j];
+		dest[j] = arr[j];
 	return (dest);
 }
 

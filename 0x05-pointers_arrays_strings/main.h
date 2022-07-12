@@ -1,3 +1,6 @@
+/* prototype for the _putchar function*/
+int _putchar(char c);
+
 /* 0-reset_to_98 function updates the alue it points to to 98 */
 void reset_to_98(int *n);
 
