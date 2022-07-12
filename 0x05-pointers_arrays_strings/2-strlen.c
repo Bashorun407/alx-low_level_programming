@@ -2,6 +2,8 @@
 /**
  * this function returns the length of a string
  */
+
+/*function to return  length of string*/
 int _strlen(char *s)
 {
 	int i, count;
@@ -9,6 +11,7 @@ int _strlen(char *s)
 
 	for (i = 0; s[i] != '\0'; i++)
 		count++;
+	/*returning count*/
 	return (count);
 }
 
