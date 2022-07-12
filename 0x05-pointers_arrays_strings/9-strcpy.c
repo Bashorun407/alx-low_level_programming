@@ -6,21 +6,14 @@
  */
 char *_strcpy(char *dest, char *src)
 {
-	int i, count;
-	static char arr[];
+	int i;
 
 	/* copies the string pointed to by src to arr[] array*/
 	for (i = 0; src[i] != '\0'; i++)
 	{
-		arr[i] = src[i];
-		count++;
+		dest[i] = src[i];
 	}
 
-	int j;
-
-	/* copies the string in arr[] array to the buffer pointed to by *dest */
-	for (j = 0; j <= count; j++)
-		dest[j] = arr[j];
 	return (dest);
 }
 

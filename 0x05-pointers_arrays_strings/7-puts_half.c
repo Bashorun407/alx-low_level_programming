@@ -5,13 +5,13 @@
  */
 void puts_half(char *str)
 {
-	int i, count;
+	int i, j, half, count;
+
 	count = 0;
 
 	for (i =  0; str[i] != '\0'; i++)
 		count++;
-	int j;
-	int half;
+	/* initializing half with the value of half of count*/
 	half = (int)count / 2;
 
 	for (j = 0; j < half; j++)
