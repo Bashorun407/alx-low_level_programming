@@ -7,18 +7,19 @@ int _atoi(char *s)
 {
 	int i, count, num;
 
+	num = count = 0;
 	for (i = 0; s[i] != '\0'; i++)
 	{
 		if (s[i] >= '0' && s[i] <= '9')
 		{
 			count++;
 			num = s[i];
-			return (num); /*returning the value of the number gotten*/
+			return (num);
 		}
 		else
 			continue;
 	}
 	if (count == 0)
-		return (0); /*return 0 if there is no number in the string*/
+		return (0);
 }
 
