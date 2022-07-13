@@ -31,3 +31,6 @@ void print_array(int *a, int n);
 /* 9 this function copies the string pointed to by one pointer to the buffer pointed to by another pointer*/
 char *_strcpy(char *dest, char *src);
 
+/* 10 this function convert a string to an integer */
+int _atoi(char *s);
+
