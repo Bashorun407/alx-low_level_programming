@@ -14,12 +14,13 @@ int _atoi(char *s)
 		{
 			count++;
 			num = s[i];
-			return (num);
 		}
 		else
 			continue;
 	}
-	if (count == 0)
+	if (count >= 1)
+		return (num);
+	else if (count == 0)
 		return (0);
 }
 
