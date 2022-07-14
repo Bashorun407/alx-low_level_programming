@@ -5,22 +5,27 @@
  */
 int _atoi(char *s)
 {
-	int i, count, num;
+	short boolean;
+	int i, minus, result;
 
-	num = count = 0;
-	for (i = 0; s[i] != '\0'; i++)
+	i = minus = result = boolean = 0;
+	minus = -1;
+
+	while (s[i] != '\0')
 	{
+		if (s[i] == '-')
+			minus *= -1;
 		if (s[i] >= '0' && s[i] <= '9')
 		{
-			count++;
-			num = s[i];
+			result *= 10;
+			result -= (s[i] - '0');
+			boolean = 1;
 		}
-		else
-			continue;
+		else if (boolean == 1)
+			break;
+		i++;
 	}
-	if (count >= 1)
-		return (num);
-	else if (count == 0)
-		return (0);
+	result *= minus;
+	return (result);
 }
 
