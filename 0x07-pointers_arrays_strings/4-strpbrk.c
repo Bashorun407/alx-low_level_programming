@@ -13,18 +13,18 @@ char *_strpbrk(char *s, char *accept)
 	ptr = NULL;
 	while (accept[i] != '\0')
 	{
-		i++;//counts the length or size of accept array or string
+		i++;
 	}
 
-	for ( j = 0; s[j] != '\0'; j++)
+	for (j = 0; s[j] != '\0'; j++)
 	{
 		if (s[j] == accept[j])
 		{
 			for (x = j; x < (j + i); x++)
 			{
-				if((accept[x] == s[x]) && (count != i))
+				if ((accept[x] == s[x]) && (count != i))
 					count++;
-				else if((accept[x] != s[x]) && (count != i))
+				else if ((accept[x] != s[x]) && (count != i))
 				{
 					count = 0;
 					break;
@@ -32,10 +32,10 @@ char *_strpbrk(char *s, char *accept)
 			}
 		}
 
-		if (count == i) //checks if the first occurrence of the word has been reached
+		if (count == i)
 		{
-			ptr = s + j;//assigns a pointer to the first occurrence of the word
-			break;//breaks out of the first loop
+			ptr = s + j;
+			break;
 		}
 	}
 	return (ptr);

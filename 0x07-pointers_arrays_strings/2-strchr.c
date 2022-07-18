@@ -7,17 +7,22 @@
 char *_strchr(char *s, char c)
 {
 	int i;
-	int *ptr;
+	char *ptr;
 
 	i = 0;
-	ptr = s;
+	ptr = NULL;
 	while (s[i] != '\0')
 	{
-		if (s[i] == c)
-			return (ptr);
-		else
-			ptr++;
+		if (s[i] != c)
+		{
+			i++;
+		}
+		else if (s[i] == c)
+		{
+			ptr = &s[i];
+			break;
+		}
 	}
-	return (NULL);
+	return (ptr);
 }
 

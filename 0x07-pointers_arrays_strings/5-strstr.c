@@ -21,7 +21,7 @@ char *_strstr(char *haystack, char *needle)
 
 			for (x = 0;  x < count; j++)
 			{
-				if ((*ptr++ != needle[x + 1]) && (x != count -1))
+				if ((*ptr++ != needle[x + 1]) && (x != count - 1))
 				{
 					x = 0;
 					break;
