@@ -6,23 +6,12 @@
  **/
 char *_strchr(char *s, char c)
 {
-	int i;
-	char *ptr;
-
-	i = 0;
-	ptr = NULL;
-	while (s[i] != '\0')
+	while (*s)
 	{
-		if (s[i] != c)
-		{
-			i++;
-		}
-		else if (s[i] == c)
-		{
-			ptr = &s[i];
-			break;
-		}
+		if (*s == c)
+			return (s);
+		s++;
 	}
-	return (ptr);
+	return (!c ? s : NULL);
 }
 
