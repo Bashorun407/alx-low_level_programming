@@ -1,6 +1,8 @@
 #include "main.h"
+#include <stddef.h>
 /**
- ** function prints a string followed by a new line
+ ** _puts_recursion: prints a string followed by a new line recursively
+ ** @s: a string or pointer to a string to be printed
  **
  ** Return: void..
  **/

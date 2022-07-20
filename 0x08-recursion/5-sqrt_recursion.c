@@ -18,8 +18,8 @@ int do_sqrt_recursion(int n, int r)
 
 
 /**
- ** function - returns the natural square root of a number
- **
+ ** _sqrt_recursion - returns the natural square root of a number
+ **@n: natural number whose root to find
  ** Return: if n does not have a natural square root,
  ** the function should return -1
  **/
